@@ -39,8 +39,10 @@ export class DataLocalService {
     this.navCtrl.navigateForward('/tabs/tab2');
     switch (registro.type) {
       case 'http':
-        // Open browser
         this.iab.create(registro.text, '_system');
+        break;
+      case 'geo':
+        this.navCtrl.navigateForward(`/tabs/tab2/mapa/${registro.text}`);
         break;
 
       default:
