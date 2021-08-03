@@ -38,7 +38,7 @@ export class Tab1Page {
         console.log('Error', err);
         this.dataLocalService.guardarRegistro(
           'QRcode',
-          'https://fernando.herrera.com'
+          'geo:40.73151796986687,-74.06087294062502'
         );
       });
   }
